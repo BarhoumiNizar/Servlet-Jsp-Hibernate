@@ -1,0 +1,220 @@
+
+/ *
+ * Table
+ * /
+table.dataTable {
+	marge: 0 auto;
+	clarifier les deux;
+	largeur: 100%;
+}
+
+table.dataTable thead th {
+	rembourrage: 3px 18px 3px 10px;
+	bord inférieur: 1px noir uni;
+	font-weight: gras;
+	curseur: pointeur;
+	* curseur: main;
+}
+
+table.dataTable tfoot th {
+	rembourrage: 3px 18px 3px 10px;
+	border-top: 1px noir uni;
+	font-weight: gras;
+}
+
+table.dataTable td {
+	rembourrage: 3px 10px;
+}
+
+table.dataTable td.center,
+table.dataTable td.dataTables_empty {
+	text-align: centre;
+}
+
+table.dataTable tr.odd {background-color: # E2E4FF; }
+table.dataTable tr.even {background-color: blanc; }
+
+table.dataTable tr.odd td.sorting_1 {background-color: # D3D6FF; }
+table.dataTable tr.odd td.sorting_2 {background-color: #DADCFF; }
+table.dataTable tr.odd td.sorting_3 {background-color: # E0E2FF; }
+table.dataTable tr.even td.sorting_1 {background-color: #EAEBFF; }
+table.dataTable tr.even td.sorting_2 {background-color: # F2F3FF; }
+table.dataTable tr.even td.sorting_3 {background-color: # F9F9FF; }
+
+
+/ *
+ * Emballage de table
+ * /
+.dataTables_wrapper {
+	position: relative;
+	clarifier les deux;
+	* zoom: 1;
+}
+
+
+/ *
+ * Menu de longueur de page
+ * /
+.dataTables_length {
+	float: à gauche;
+}
+
+
+/ *
+ * Filtre
+ * /
+.dataTables_filter {
+	Flotter à droite;
+	text-align: droit;
+}
+
+
+/ *
+ * Informations sur la table
+ * /
+.dataTables_info {
+	clarifier les deux;
+	float: à gauche;
+}
+
+
+/ *
+ * Pagination
+ * /
+.dataTables_paginate {
+	Flotter à droite;
+	text-align: droit;
+}
+
+/ * Pagination à deux boutons - précédent / suivant * /
+.paginate_disabled_previous,
+.paginate_enabled_previous,
+.paginate_disabled_next,
+.paginate_enabled_next {
+	hauteur: 19px;
+	float: à gauche;
+	curseur: pointeur;
+	* curseur: main;
+	couleur: # 111! important;
+}
+.paginate_disabled_previous: hover,
+.paginate_enabled_previous: hover,
+.paginate_disabled_next: hover,
+.paginate_enabled_next: hover {
+	text-decoration: none! important;
+}
+.paginate_disabled_previous: actif,
+.paginate_enabled_previous: actif,
+.paginate_disabled_next: actif,
+.paginate_enabled_next: actif {
+	contour: aucun;
+}
+
+.paginate_disabled_previous,
+.paginate_disabled_next {
+	couleur: # 666! important;
+}
+.paginate_disabled_previous,
+.paginate_enabled_previous {
+	rembourrage-gauche: 23px;
+}
+.paginate_disabled_next,
+.paginate_enabled_next {
+	rembourrage-droit: 23px;
+	marge gauche: 10px;
+}
+
+.paginate_enabled_previous {background: url ('../ images / back_enabled.png') no-repeat en haut à gauche; }
+.paginate_enabled_previous: hover {arrière-plan: url ('../ images / back_enabled_hover.png') no-repeat en haut à gauche; }
+.paginate_disabled_previous {background: url ('../ images / back_disabled.png') no-repeat en haut à gauche; }
+
+.paginate_enabled_next {background: url ('../ images / forward_enabled.png') non-répétition en haut à droite; }
+.paginate_enabled_next: hover {arrière-plan: url ('../ images / forward_enabled_hover.png') no-repeat en haut à droite; }
+.paginate_disabled_next {background: url ('../ images / forward_disabled.png') non-répétition en haut à droite; }
+
+/ * Pagination complète des numéros * /
+.paging_full_numbers {
+	hauteur: 22px;
+	hauteur de ligne: 22px;
+}
+.paging_full_numbers a: actif {
+	contour: aucun
+}
+.paging_full_numbers a: hover {
+	text-decoration: aucun;
+}
+
+.paging_full_numbers a.paginate_button,
+.paging_full_numbers a.paginate_active {
+	bordure: 1px solide #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	rembourrage: 2px 5px;
+	marge: 0 3px;
+	curseur: pointeur;
+	* curseur: main;
+	couleur: # 333! important;
+}
+
+.paging_full_numbers a.paginate_button {
+	couleur de fond: #ddd;
+}
+
+.paging_full_numbers a.paginate_button: hover {
+	couleur de fond: #ccc;
+	text-decoration: none! important;
+}
+
+.paging_full_numbers a.paginate_active {
+	couleur de fond: # 99B3FF;
+}
+
+
+/ *
+ * Indicateur de traitement
+ * /
+.dataTables_processing {
+	position: absolue;
+	en haut: 50%;
+	gauche: 50%;
+	largeur: 250px;
+	hauteur: 30px;
+	marge gauche: -125px;
+	marge supérieure: -15px;
+	rembourrage: 14px 0 2px 0;
+	bordure: 1px solide #ddd;
+	text-align: centre;
+	couleur: # 999;
+	taille de police: 14px;
+	couleur de fond: blanc;
+}
+
+
+/ *
+ * Tri
+ * /
+.sorting {background: url ('../ images / sort_both.png') centre de non-répétition à droite; }
+.sorting_asc {background: url ('../ images / sort_asc.png') Centre de non-répétition à droite; }
+.sorting_desc {background: url ('../ images / sort_desc.png') Centre de non-répétition à droite; }
+
+.sorting_asc_disabled {background: url ('../ images / sort_asc_disabled.png') Centre de non-répétition à droite; }
+.sorting_desc_disabled {background: url ('../ images / sort_desc_disabled.png') Centre de non-répétition à droite; }
+ 
+table.dataTable thead th: actif,
+table.dataTable thead td: active {
+	contour: aucun;
+}
+
+
+/ *
+ * Défilement
+ * /
+.dataTables_scroll {
+	clarifier les deux;
+}
+
+.dataTables_scrollBody {
+	* marge-dessus: -1px;
+	-webkit-overflow-scrolling: touchez;
+}

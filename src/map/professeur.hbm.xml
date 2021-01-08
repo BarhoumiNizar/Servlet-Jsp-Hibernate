@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Model.Professeur" table="Professeur">
+		<id name="id" type="java.lang.Integer" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="pf_nom" type="java.lang.String">
+			<column name="pf_nom" />
+		</property>
+		<property name="pf_prenom" type="java.lang.String">
+			<column name="pf_prenom" />
+		</property>
+		<property name="adresse" type="java.lang.String">
+			<column name="adresse" />
+		</property>
+		<property name="pf_email" type="java.lang.String">
+			<column name="pf_email" />
+		</property>
+		<property name="pf_num_tel" type="java.lang.String">
+			<column name="pf_num_tel" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+		<property name="etat" type="java.lang.String">
+			<column name="etat" />
+		</property>
+		<property name="departement" type="java.lang.String">
+			<column name="departement" />
+		</property>
+		
+</class>
+
+	
+</hibernate-mapping>

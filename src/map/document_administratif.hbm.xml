@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Model.document_administratif" table="document_administratif">
+		<id name="id" type="java.lang.Integer" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="etudiant" type="java.lang.String">
+			<column name="etudiant" />
+		</property>
+		<property name="type_document" type="java.lang.String">
+			<column name="type_document" />
+		</property>
+		<property name="etat" type="java.lang.String">
+			<column name="etat" />
+		</property>
+		<property name="vu" type="java.lang.String">
+			<column name="vu" />
+		</property>
+		<property name="date" type="java.lang.String">
+			<column name="date" />
+		</property>
+		<property name="date_validation" type="java.lang.String">
+			<column name="date_validation" />
+		</property>
+		<property name="etats" type="java.lang.String">
+			<column name="etats" />
+		</property>
+		
+	</class>
+
+	
+</hibernate-mapping>

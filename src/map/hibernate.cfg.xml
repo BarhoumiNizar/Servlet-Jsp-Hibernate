@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- <property name="hibernate.dialect"> org.hibernate.dialect.MySQLDialect 
+			</property> -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<!-- Assume test is the database name -->
+		<property name="connection.url">jdbc:mysql://localhost:3306/UAS</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="current_session_context_class">thread</property>
+		<property name="connection.pool_size">1</property>
+	 <!-- <property name="hibernate.hbm2ddl.auto">create</property>-->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+		<!-- List of XML mapping files-->
+		<mapping resource="map/Etudiant.hbm.xml" />
+		<mapping resource="map/professeur.hbm.xml" /> 
+		<mapping resource="map/seance.hbm.xml" />
+		<mapping resource="map/salle.hbm.xml" />
+		<mapping resource="map/classe.hbm.xml" />
+		<mapping resource="map/departement.hbm.xml" />
+		<mapping resource="map/Filiere.hbm.xml" /> 
+		<mapping resource="map/document_administratif.hbm.xml" />
+		<mapping resource="map/emploie_prof.hbm.xml" />
+		<mapping resource="map/emploie_etudiant.hbm.xml" />
+		<mapping resource="map/Examen.hbm.xml" />
+		<mapping resource="map/absence.hbm.xml" />
+		<mapping resource="map/notification.hbm.xml" />
+		<mapping resource="map/payement.hbm.xml" />
+		<mapping resource="map/cours.hbm.xml" />
+		<mapping resource="map/stage.hbm.xml" />
+		<mapping resource="map/matiere.hbm.xml" />
+		<mapping resource="map/chef.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>

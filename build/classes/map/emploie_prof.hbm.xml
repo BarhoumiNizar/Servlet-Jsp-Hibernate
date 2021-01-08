@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Model.emploie_temps_prof" table="emploie_temps_prof">
+		<id name="id" type="java.lang.Integer" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="lundi" type="java.lang.String">
+			<column name="lundi" />
+		</property>
+		<property name="mardi" type="java.lang.String">
+			<column name="mardi" />
+		</property>
+		<property name="mercredi" type="java.lang.String">
+			<column name="mercredi" />
+		</property>
+		<property name="jeudi" type="java.lang.String">
+			<column name="jeudi" />
+		</property>
+		<property name="vendredi" type="java.lang.String">
+			<column name="vendredi" />
+		</property>
+		<property name="samedi" type="java.lang.String">
+			<column name="samedi" />
+		</property>
+		<property name="prof" type="java.lang.String">
+			<column name="prof" />
+		</property>
+		
+		
+		
+	</class>
+
+	
+</hibernate-mapping>

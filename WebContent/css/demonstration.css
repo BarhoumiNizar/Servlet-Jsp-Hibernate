@@ -1,0 +1,123 @@
+
+#container ul, #container ul li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#container a,#container a:link,#container a:active,#container a:visited,#container a:active {
+	border: none;
+	outline: none;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+#container {
+	z-index:-1;
+	width: 1200px;
+	margin: 10px auto;
+	
+}
+
+.subtle {
+	display: block;
+	float: right;
+	color: #878793;
+	font-size: 11px;
+	padding: 20px 0;
+}
+
+
+/* Indicators */
+ul#billy_indicators {
+	width: auto;
+	margin: 20px 0 0 0;
+	float: right;
+	display: block;
+	
+}
+
+	ul#billy_indicators li {
+		display: block;
+		width: 15px;
+		height: 15px;
+		float: left;
+		margin: 0 5px 0 0;
+	}
+		
+		ul#billy_indicators li a {
+			display: block;
+			width: 15px;
+			height: 15px;
+			background: blue;
+			opacity: 0.4;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+		}	
+		
+		ul#billy_indicators li.active a { opacity: 1.0; }
+		ul#billy_indicators li a:hover { opacity: 0.6; }
+			ul#billy_indicators li.active a:hover { opacity: 1.0; }
+		
+/* Controls */
+#clicker {
+	display: block;
+	float: left;
+	margin: 20px 0 0 0;
+}
+
+	#clicker a {
+		background: transparent;
+		border: 1px solid white;
+		font-size: 12px;
+		color: white;
+		padding: 5px 10px 4px;
+		margin: 0;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+		#clicker a:hover {
+			color: #252529;
+			background: white;
+		}
+		
+/* Carousel */
+#billy_clip { 
+	width: 1200px; 
+	position: relative; /* For IE */
+	overflow: hidden;
+	height: 400px;
+	z-index:100;
+}
+
+ul#billy_scroller {
+	width: 9999px;
+	height: 400px;
+	display: block;
+	float: left;
+	position: relative;
+}
+	
+	ul#billy_scroller li {
+		width: 1200px;
+		height: 400px;
+		float: left;
+		display: block;
+	}
+	
+
+
+.codetab {
+	padding: 10px;
+	width: 880px;
+	height: 380px;
+	background: #646391;
+	font-size: 0.9em;
+	overflow: auto;
+	display: block;
+	float: left;
+}

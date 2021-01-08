@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Model.Examen" table="notes">
+		<id name="id" type="java.lang.Integer" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="examen_type" type="java.lang.String">
+			<column name="examen_type" />
+		</property>
+		<property name="examen_date" type="java.lang.String">
+			<column name="examen_date" />
+		</property>
+		<property name="examen_heure_debut" type="java.lang.String">
+			<column name="examen_heure_debut" />
+		</property>
+		<property name="examen_heure_fin" type="java.lang.String">
+			<column name="examen_heure_fin" />
+		</property>
+		<property name="examen_note" type="java.lang.String">
+			<column name="examen_note" />
+		</property>
+		<property name="prof" type="java.lang.String">
+			<column name="prof" />
+		</property>
+		<property name="mat" type="java.lang.String">
+			<column name="mat" />
+		</property>
+		<property name="id_salle" type="java.lang.Integer">
+			<column name="id_salle" />
+		</property>
+		<property name="examen_coefficient" type="java.lang.Integer">
+			<column name="examen_coefficient" />
+		</property>
+		<property name="etudiant" type="java.lang.String">
+			<column name="etudiant" />
+		</property>
+		<property name="classe" type="java.lang.String">
+			<column name="classe" />
+		</property>
+		<property name="etat" type="java.lang.String">
+			<column name="etat" />
+		</property>
+		
+		
+	</class>
+
+	
+</hibernate-mapping>

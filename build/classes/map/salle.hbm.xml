@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Model.Salle" table="Salle">
+		<id name="id" type="java.lang.Integer" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="sall_type" type="java.lang.String">
+			<column name="sall_type" />
+		</property>
+		<property name="sall_nom" type="java.lang.String">
+			<column name="sall_nom" />
+		</property>
+		
+		<property name="sall_etage" type="java.lang.Integer">
+			<column name="sall_etage" />
+		</property>
+		<property name="sall_immeuble" type="java.lang.String">
+			<column name="sall_immeuble" />
+		</property>
+		<property name="etat" type="java.lang.String">
+			<column name="etat" />
+		</property>
+		
+		
+</class>
+
+	
+</hibernate-mapping>

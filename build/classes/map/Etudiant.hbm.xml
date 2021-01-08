@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Model.Etudiant" table="Etudiant">
+		<id name="id" type="java.lang.Integer" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="matricule" type="java.lang.String">
+			<column name="matricule" />
+		</property>
+		<property name="et_email" type="java.lang.String">
+			<column name="et_email" />
+		</property>
+		<property name="et_nom" type="java.lang.String">
+			<column name="et_nom" />
+		</property>
+		<property name="et_prenom" type="java.lang.String">
+			<column name="et_prenom" />
+		</property>
+		<property name="et_date_naissance" type="java.lang.String">
+			<column name="et_date_naissance" />
+		</property>
+		<property name="et_sexe" type="java.lang.String">
+			<column name="et_sexe" />
+		</property>
+		<property name="et_nationalite" type="java.lang.String">
+			<column name="et_nationalite" />
+		</property>
+		<property name="et_num_tel" type="java.lang.String">
+			<column name="et_num_tel" />
+		</property>
+		<property name="et_adresse" type="java.lang.String">
+			<column name="et_adresse" />
+		</property>
+		<property name="et_dernier_etablissement" type="java.lang.String">
+			<column name="et_dernier_etablissement" />
+		</property>
+		<property name="classe" type="java.lang.String">
+			<column name="classe" />
+		</property>
+		<property name="etat" type="java.lang.String">
+			<column name="etat" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+		<property name="etats" type="java.lang.String">
+			<column name="etats" />
+		</property>
+		<property name="filiere" type="java.lang.String">
+			<column name="filiere" />
+		</property>
+		
+	</class>
+
+	
+</hibernate-mapping>

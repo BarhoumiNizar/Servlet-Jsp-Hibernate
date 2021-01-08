@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Model.stage" table="stage">
+		<id name="id" type="java.lang.Integer" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="stg_sujet" type="java.lang.String">
+			<column name="stg_sujet" />
+		</property>
+		<property name="stg_type" type="java.lang.String">
+			<column name="stg_type" />
+		</property>
+		<property name="stg_entreprise" type="java.lang.String">
+			<column name="stg_entreprise" />
+		</property>
+		<property name="prof" type="java.lang.String">
+			<column name="prof" />
+		</property>
+		<property name="classe" type="java.lang.String">
+			<column name="classe" />
+		</property>
+		<property name="stg_date_debut" type="java.lang.String">
+			<column name="stg_date_debut" />
+		</property>
+		<property name="stg_date_fin" type="java.lang.String">
+			<column name="stg_date_fin" />
+		</property>
+		<property name="etat" type="java.lang.String">
+			<column name="etat" />
+		</property>
+		
+</class>
+
+	
+</hibernate-mapping>

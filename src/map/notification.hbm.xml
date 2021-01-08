@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="Model.notification" table="notification">
+		<id name="id" type="java.lang.Integer" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="date_notification" type="java.lang.String">
+			<column name="date_notification" />
+		</property>
+		<property name="type" type="java.lang.String">
+			<column name="type" />
+		</property>
+		<property name="contenu" type="java.lang.String">
+			<column name="contenu" />
+		</property>
+		<property name="classe" type="java.lang.String">
+			<column name="classe" />
+		</property>
+		<property name="etat" type="java.lang.String">
+			<column name="etat" />
+		</property>
+		<property name="prof" type="java.lang.String">
+			<column name="prof" />
+		</property>
+		
+		
+		
+	</class>
+
+	
+</hibernate-mapping>
